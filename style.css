@@ -2,7 +2,7 @@
 body{
 
     background-image: url(images/bgleft.png), url(images/bgright.png);
-    background-size:1300px;
+    background-size:1700px;
     background-position: left, right;
 
 }
@@ -54,5 +54,14 @@ h5{
     position:fixed;
     top:auto;
     right:70px;
+
+}
+
+#about{
+
+    position: absolute;
+    position:fixed;
+    top:auto;
+    right:200px;
 
 }
