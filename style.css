@@ -2,7 +2,7 @@
 body{
 
     background-image: url(images/bgleft.png), url(images/bgright.png);
-    background-size:1700px;
+    background-size:2200px;
     background-position: left, right;
 
 }
