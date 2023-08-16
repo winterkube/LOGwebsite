@@ -1,0 +1,58 @@
+
+body{
+
+    background-image: url(images/bgleft.png), url(images/bgright.png);
+    background-size:1300px;
+    background-position: left, right;
+
+}
+
+/* big font*/
+h1{
+
+    font-family: "Lexend";
+    color:rgb(117, 73, 59);
+    text-align: center;
+}
+
+
+h2{
+
+    font-size: 500px;
+}
+
+/* blank */
+h3{
+    color:transparent;
+    font-size: 10px;
+}
+
+h4{
+
+    font-family: "Lexend";
+    font-size: 50px;
+    color:rgb(117, 73, 59);
+    text-align: center;
+}
+
+h5{
+
+    font-family: "Lexend";
+    font-size: 25px;
+    color:rgba(117, 80, 59, 0.943);
+
+    position: relative;
+    bottom: 50px;
+    
+    text-align: center;
+
+}
+
+#home{
+
+    position: absolute;
+    position:fixed;
+    top:auto;
+    right:70px;
+
+}
