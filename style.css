@@ -7,17 +7,23 @@ body{
 
 }
 
-/* big font*/
+/* regular lexend*/
 h1{
 
     font-family: "Lexend";
     color:rgb(117, 73, 59);
     text-align: center;
+
+    margin-right: 150px;
+    margin-left: 150px;
+
+
+
 }
 
-
+/*big blank*/
 h2{
-
+    color:transparent;
     font-size: 500px;
 }
 
@@ -27,6 +33,7 @@ h3{
     font-size: 10px;
 }
 
+/* large lexend*/
 h4{
 
     font-family: "Lexend";
@@ -35,6 +42,7 @@ h4{
     text-align: center;
 }
 
+/* small lexend*/
 h5{
 
     font-family: "Lexend";
@@ -48,12 +56,41 @@ h5{
 
 }
 
+/* cabin sketch*/
+h6{
+
+    font-family: "Cabin Sketch";
+    font-size: 70px;
+
+    color:rgba(164, 115, 88, 0.943);
+
+    position: relative;
+    bottom: 140px;
+
+    text-align: center;
+    text-shadow: 0px 0px 5px rgb(176, 124, 98);
+
+}
+
 #home{
 
     position: absolute;
     position:fixed;
     top:auto;
-    right:200px;
+    right:320px;
+
+    z-index: 5;
+
+}
+
+#gaming{
+
+    position: absolute;
+    position:fixed;
+    top:auto;
+    right:190px;
+
+    z-index: 5;
 
 }
 
@@ -63,5 +100,13 @@ h5{
     position:fixed;
     top:auto;
     right:70px;
+    
+    z-index: 5;
+}
+
+#construct{
+
+    position: relative;
+    left: 5px;
 
 }
