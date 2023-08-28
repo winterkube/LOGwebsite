@@ -84,7 +84,7 @@ h7{
 
     position: relative;
     left: 30px;
-    bottom: 180px;
+    bottom: 185px;
 
     text-shadow: 0px 0px 5px rgb(176, 124, 98);
 
@@ -100,7 +100,8 @@ h8{
 
     position: relative;
     left: 305px;
-    bottom: 160px;
+    bottom: 165px;
+
 
 
 }
@@ -158,18 +159,21 @@ h8{
 
 #hexaupload{
 
-     margin-left: 180px;
+     margin-left: 15%;
+     margin-right: 42%;
 
 }
 
 #hexaopen{
 
-    margin-left: 180px;
+    margin-left: 15%;
+    margin-right: 42%;
 
 }
 
 #hexafree{
 
-    margin-left: 180px;
+    margin-left: 15%;
+    margin-right: 42%;
 
 }
