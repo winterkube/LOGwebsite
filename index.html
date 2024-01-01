@@ -15,38 +15,10 @@
 
 <body>
 
-<h3> a  </h3>
+<h3> <br>  </h3>
 
-<!-- PLANK -->
-<div id = "plank">
-
-    <img src = "images/plank.png" height = 160, width = 440px>
-
-</div>
-
-<!-- HOME LOGO -->
-<div id="home">
-    <a href="index.html" target="_self" title = "Home"> 
-        <img src = "images/homeicon.png" height = 80>
-    </a>
-        <h5> HOME </h5>
-</div>
-
-<!-- GAMES LOGO -->
-<div id="gaming">
-    <a href="games.html" target="_self" title = "Games"> 
-        <img src = "images/gamingicon.png" height = 80>
-    </a>
-        <h5> GAMES </h5>
-</div>
-
-<!-- ABOUT LOGO -->
-<div id="about">
-    <a href="about.html" target="_self" title = "About"> 
-        <img src = "images/abouticon.png" height = 80>
-    </a>
-        <h5> ABOUT </h5>
-</div>
+<!-- NAV BAR -->
+<script id="replace_with_navbar" src="nav.js"></script>
 
 <!-- HEAD -->
 <div id="logo"> <center>
@@ -59,7 +31,7 @@
 
 <!-- UNDER CONSTRUCTION -->
 <center>
-    <h3> a </h3>
+    <h3> <br> </h3>
         <div id = "construct">
             <img src = "images/construct.png" height = 270>
     
@@ -68,10 +40,213 @@
             <h6> <b> UNDER <br> CONSTRUCTION </b> </h6>
     </center>
 
+<div id = "black">
+    <img id = "blk" src = "images/blank.png" height = 1 width = 1>
+</div>
+
+
+<h2> <br> </h2>
+
+<div id = "secret" onclick="secretFunc()">
+        <img align = "right" src = "images/lock.png" height = 35>
+
+</div>
+
+<!--  getting user ip  -->
+<script src=
+                "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+
+<!-- secret button -->
+<script>
+
+    var count = 0;
+
+    var hit = new Audio("sfx/hitsfx.mp3");
+    hit.volume = 0.6;
+
+    var clock = new Audio("sfx/clock.mp3");
+    clock.volume = 0.2;
+
+    const img = document.getElementById('blk');
 
 
 
-<h2> AAA </h2>
+    function secretFunc() {
+
+        switch(count) {
+            case 0:
+                if (confirm("Access denied")) count++;
+                break;
+            case 1:
+                if (confirm("Access denied.")) count++;
+                break;
+            case 2:
+                if (confirm("Access is denied")) count++;
+                break;
+            case 3:
+                if (confirm("Access DENIED")) count++;
+                break;
+            case 4:
+                if (confirm("Acces refuse")) count++;
+                break;
+            case 5:
+                if (confirm("Cool kids only")) count++;
+                break;
+            case 6:
+                if (confirm("You're not cool enough")) count++;
+                break;
+            case 7:
+                if (confirm("You are uncool")) count++;
+                break;
+            case 8:
+                if (confirm("Stop trying")) count++;
+                break;
+            case 9:
+                if (confirm("No")) count++;
+                break;
+            case 10:
+                if (confirm("Not lettin you in")) count++;
+                break;
+            case 11:
+                if (confirm("Admins only")) count++;
+                break;
+            case 12:
+                if (confirm("You're not an admin")) count++;
+                break;
+            case 13:
+                if (confirm("You will never be admin")) count++;
+                break;
+            case 14:
+                if (confirm("There's nothing here anyway.")) count++;
+                break;
+            case 15:
+                if (confirm("What do you want?")) count++;
+                break;
+            case 16:
+                if (confirm("There is NOTHING to see here.")) count++;
+                break;
+            case 17:
+                if (confirm("Don't look at me like that. I would never lie")) count++;
+                break;
+            case 18:
+                if (confirm("Click OK if you're stupid")) count++;
+                break;
+            case 19:
+                if (confirm("Haha you just confirmed you're stupid")) count++;
+                break;
+            case 20:
+                if (confirm("Sorry, only non-stupid people are allowed")) count++;
+                break;
+            case 21:
+                if (confirm("Go away")) count++;
+                break;
+            case 22:
+                if (confirm("Please?")) count++;
+                break;
+            case 23:
+                if (confirm("Click OK to restart")) {
+                    count = 0;
+                } else {
+                    count++;
+                }
+                break;
+            case 24:
+                if (confirm(".")) count++;
+                break;
+            case 25:
+                if (confirm("Y'know this website is pretty cool")) count++;
+                break;
+            case 26:
+                if (confirm("You should check out some of the other pages!")) count++;
+                break;
+            case 27:
+                if (confirm("What do you get out of my suffering?")) count++;
+                break;
+            case 28:
+                if (confirm("Look, I'm sorry for calling you stupid")) count++;
+                break;
+            case 29:
+                if (confirm("Not everyone is privileged enough for proper education")) count++;
+                break;
+            case 30:
+                if (confirm("Have you considered learning how to program?")) count++;
+                break;
+            case 31:
+                if (confirm("I heard that makes you smarter.")) count++;
+                break;
+            case 32:
+                if (confirm("Plus... you can maybe end up making a game to submit here!")) count++;
+                break;
+            case 33:
+                if (confirm("It'll be so fun! :)")) count++;
+                break;
+            case 34:
+                if (confirm(":)))))))))")) count++;
+                break;
+            case 35:
+                if (confirm("op3w4tg8hieo98ghuo98")) count++;
+                break;
+            case 36:
+                if (confirm("LEAVE")) count++;
+                break;
+            case 37:
+                if (confirm("Congratulations! You have reached the end.")) count++;
+                break;
+            case 38:
+                if (confirm("Access denied")) count++;
+                break;
+            case 39:
+                if (confirm("Access denied.")) count++;
+                break;
+            case 40:
+                if (confirm("Access DENIED")) count++;
+                break;
+            case 41:
+                if (confirm("WHY ARE YOU STILL HERE")) count++;
+                break;
+            case 42:
+                if (confirm("I'm gonna kill you")) count++;
+                break;
+            case 43:
+                if (confirm("Press OK to be killed")){
+                    hit.play();
+                    img.src = "images/black.png";
+
+                    img.style.height = `2000px`;
+                    img.style.width = `1900px`;
+
+                    setTimeout(function() {
+                        clock.currentTime = 0;
+                        clock.play();
+                        clock.loop = true;
+                    }, 4000);
+
+                    $.getJSON("https://api.ipify.org?format=json",
+                        function (data) {
+
+                            // Setting text of element P with id gfg
+                            $("#ip").html(data.ip);
+                            $("#ip2").html("careful.");
+                        })
+
+
+
+                }
+                break;
+            default:
+                if (confirm("..."))
+                break;
+        }
+    }
+
+
+</script>
+
+<div id = "ip">  </div>
+<div id = "ip2"> </div>
+
+<h3> <br> <br> <br> </h3>
 
 </body>
 
