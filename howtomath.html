@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            align-items: center;
+            justify-content: center;
+        }
+        canvas {
+            position: relative;
+            bottom: 150px;
+            border: 1px solid black;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+
+    <title> LOG </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+<h2> <br> </h2>
+<h6>MATH THINGY</h6>
+
+<!-- NAV BAR -->
+<script id="replace_with_navbar" src="nav.js"></script>
+
+
+
+<div class="container" style="
+    position: absolute;
+    z-index: 10;
+            left: 50%;
+            transform: translate(-50%, -50%);">
+    <h5>Fill In The Blank </h5>
+
+    <div id = "question">
+        <h5> </h5>
+    </div>
+
+    <label for="userInput"></label><input type="text" id="userInput" placeholder="Type your answer here">
+    <div id = "check">
+        <h5> </h5>
+    </div>
+
+
+    <div id = "sol">
+
+    </div>
+
+</div>
+
+<div style="text-align: center; z-index: 1;">
+    <canvas width="500" height="500" id="game"></canvas>
+</div>
+<script>
+    var canvas = document.getElementById('game');
+    var context = canvas.getContext('2d');
+
+    // get random whole numbers in a specific range
+    // @see https://stackoverflow.com/a/1527820/2124254
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+
+    function getRandomOperand() {
+        var num = getRandomInt(0,3);
+        var operand;
+        switch (num) {
+            case 0: operand = '+';
+            break;
+            case 1: operand = '-';
+            break;
+            case 2: operand = '*';
+            break;
+            case 3: operand = '/';
+            break;
+            default: operand = '+';
+        }
+        return operand;
+
+    }
+
+        var num1 = getRandomInt(0,10);
+        var num2 = getRandomInt(0,10);
+        var solution;
+        var operand = getRandomOperand();
+
+        switch (operand) {
+            case '+':
+                solution = num1 + num2;
+                break;
+            case '-':
+                solution = num1 - num2;
+                break;
+            case '*':
+                solution = num1 * num2;
+                break;
+            case '/':
+                while (num1 % num2 !== 0) {
+                    num1++;
+                }
+                solution = num1 / num2;
+                break;
+            default:
+                solution = num1 + num2;
+        }
+
+
+        const question = document.getElementById('question');
+        question.textContent = num1 + " " + operand + " " + num2 + " = ? ";
+
+
+    const sol = document.getElementById('sol');
+    sol.textContent = "solution = " + solution;
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const input = document.getElementById('userInput');
+
+        input.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                e.preventDefault(); // Prevent the default action of the Enter key
+                const userAnswer = input.value;
+                const check = document.getElementById('check');
+                console.log('User answer:', userAnswer);
+                // You can now use the answer variable in your script
+                // Clear the input field
+
+                if (userAnswer == solution) {
+                    check.textContent = 'Correct'; // Update the message
+                    check.style.color = 'green'; // Optional: style the message
+                } else {
+                    check.textContent = 'Wrog';
+                    check.style.color = 'red'; // Optional: style the message
+                }
+
+
+            }
+
+        });
+    });
+
+
+</script>
+
+</body>
+</html>

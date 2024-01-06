@@ -47,6 +47,7 @@ h5{
 
     z-index: 100;
 
+
 }
 
 #gaming{
@@ -76,5 +77,14 @@ h5{
 
     z-index: 100;
 
+
+}
+
+#arrow{
+    position:fixed;
+    top: 28px;
+    right:20px;
+
+    z-index: 100;
 
 }

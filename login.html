@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+    <title> LOG </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body {font-family: Arial, Helvetica, sans-serif;}
-        form {border: 3px solid #f1f1f1;}
+        body {font-family: Lexend,serif; font-size: 16px;}
+        form {border: 5px solid #f1f1f1;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        bottom: 200px;}
 
         input[type=text], input[type=password] {
             width: 100%;
@@ -35,18 +50,8 @@
             background-color: #f44336;
         }
 
-        .imgcontainer {
-            text-align: center;
-            margin: 24px 0 12px 0;
-        }
-
-        img.avatar {
-            width: 40%;
-            border-radius: 50%;
-        }
-
         .container {
-            padding: 16px;
+            padding: 26px;
         }
 
         span.psw {
@@ -68,12 +73,15 @@
 </head>
 <body>
 
-<h2>Login Form</h2>
 
-<form action="/action_page.php" method="post">
-    <div class="imgcontainer">
-        <img src="img_avatar2.png" alt="Avatar" class="avatar">
-    </div>
+<!-- NAV BAR -->
+<script id="replace_with_navbar" src="nav.js"></script>
+
+
+<h3> <br> <br> <br> </h3>
+<h6>LOGIN</h6>
+
+<form action="index.html" method="post">
 
     <div class="container">
         <label for="uname"><b>Username</b></label>
