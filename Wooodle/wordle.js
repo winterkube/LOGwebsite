@@ -127,7 +127,9 @@ function checkGuess () {
             box.style.backgroundColor = letterColor
             shadeKeyBoard(letter, letterColor)
         }, delay)
-    }
+
+
+}
 
     if (guessString === rightGuessString) {
 
@@ -137,6 +139,7 @@ function checkGuess () {
             //let letter = currentGuess[j]
 
             letterColor = 'green'
+
         }
 
 
