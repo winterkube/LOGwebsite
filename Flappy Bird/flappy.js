@@ -1,6 +1,6 @@
 //board
 let board;
-let boardWidth = 360;
+let boardWidth = 480;
 let boardHeight = 640;
 let context;
 
@@ -36,11 +36,14 @@ let gravity = 0.2;
 
 let gameOver = false;
 let score = 0;
+let highestScore = 0;
 
 const pipe = ["Flappy Images/Top_PipeB.png", "Flappy Images/Bot_PipeB.png"];
 const background = [];
 const mode = [1000, 1500, 2000];
-// maybe create an array that stores each customizable value -> custom[] = [dif#, bg#, pipe#1, pipe#2]
+const settings = [1, 0, 1];
+
+// maybe create an array that stores each customizable value -> custom[] = [dif#, pipe#1, pipe#2]
 // and then mode[custom[0]] etc etc ??? with each value in custom corresponding to the right index
 // in its respective array
 
@@ -61,10 +64,10 @@ window.onload = function() {
     }
 
     topPipeImg = new Image();
-    topPipeImg.src = pipe[0];
+    topPipeImg.src = pipe[settings[1]];
 
     bottomPipeImg = new Image();
-    bottomPipeImg.src = pipe[1];
+    bottomPipeImg.src = pipe[settings[2]];
 
     requestAnimationFrame(update);
     setInterval(placePipes, mode[2]); //every 1.5 seconds
@@ -115,7 +118,10 @@ function update() {
     context.fillText(score, 5, 45);
 
     if (gameOver) {
-        context.fillText("GAME OVER", 5, 90);
+        highScore()
+        context.fillText("GAME OVER",5, 90);
+        context.fillText("HIGH SCORE:",5, 135);
+        context.fillText(highestScore,315 , 135);
     }
 }
 
@@ -170,6 +176,16 @@ function detectCollision(a, b) {
         a.y + a.height > b.y;    //a's bottom left corner passes b's top left corner
 }
 
-function controls(){
-    alert("Pressed!")
+function highScore(){
+    if(score > highestScore)
+        highestScore = score
+
+}
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
 }
