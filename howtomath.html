@@ -46,18 +46,17 @@
             transform: translate(-50%, -50%);">
     <h5>Fill In The Blank </h5>
 
-    <div id = "question">
+    <div id = "question" style="font-size: 20px;">
         <h5> </h5>
     </div>
 
-    <label for="userInput"></label><input type="text" id="userInput" placeholder="Type your answer here">
+    <label for="userInput"></label><input type="text" id="userInput" placeholder="Enter answer">
     <div id = "check">
         <h5> </h5>
     </div>
 
 
-    <div id = "sol">
-
+    <div id = "sol" style="color: white; position: relative; font-size: 20px;">
     </div>
 
 </div>
@@ -76,7 +75,7 @@
     }
 
     function getRandomOperand() {
-        var num = getRandomInt(0,3);
+        var num = getRandomInt(0,4);
         var operand;
         switch (num) {
             case 0: operand = '+';
@@ -93,10 +92,33 @@
 
     }
 
-        var num1 = getRandomInt(0,10);
-        var num2 = getRandomInt(0,10);
-        var solution;
+    function genEq2() {
+
+        var num1 = getRandomInt(0, 16);
+        var num2 = getRandomInt(0, 16);
         var operand = getRandomOperand();
+
+        if (operand === '/') {
+            while (num1 % num2 !== 0) {
+                num1++;
+            }
+        }
+
+        return num1 + " " + operand + " " + num2 + " = ?" ;
+
+    }
+
+    function getSol(string) {
+
+        var solution;
+        const match = string.match(/(\d+)\s*([\+\-\*\/])\s*(\d+)/);
+
+        if (!match) return "Invalid question format";
+
+        // Extracting the operands and the operator
+        const num1 = parseInt(match[1], 10);
+        const operand = match[2];
+        const num2 = parseInt(match[3], 10);
 
         switch (operand) {
             case '+':
@@ -109,22 +131,25 @@
                 solution = num1 * num2;
                 break;
             case '/':
-                while (num1 % num2 !== 0) {
-                    num1++;
-                }
                 solution = num1 / num2;
                 break;
             default:
                 solution = num1 + num2;
         }
 
+        return solution;
 
-        const question = document.getElementById('question');
-        question.textContent = num1 + " " + operand + " " + num2 + " = ? ";
+    }
 
+    const question = document.getElementById('question');
+    function updateEq() {
+        question.textContent = genEq2();
+        const sol = document.getElementById('sol');
+        sol.textContent = "solution = " + getSol(question.textContent);
+    }
 
-    const sol = document.getElementById('sol');
-    sol.textContent = "solution = " + solution;
+    updateEq();
+
 
     document.addEventListener('DOMContentLoaded', (event) => {
         const input = document.getElementById('userInput');
@@ -136,18 +161,21 @@
                 const check = document.getElementById('check');
                 console.log('User answer:', userAnswer);
                 // You can now use the answer variable in your script
-                // Clear the input field
+                input.value = ''; // Clear the input field
 
-                if (userAnswer == solution) {
+                if (userAnswer == getSol(question.textContent)) {
                     check.textContent = 'Correct'; // Update the message
                     check.style.color = 'green'; // Optional: style the message
+                    updateEq();
                 } else {
                     check.textContent = 'Wrog';
                     check.style.color = 'red'; // Optional: style the message
                 }
 
 
+
             }
+
 
         });
     });
