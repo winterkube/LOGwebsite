@@ -1,7 +1,7 @@
 
 body{
 
-    background-image: url(images/bgleft.png), url(images/bgright.png);
+    background-image: url(my-app/src/components/images/bgleft.png), url(my-app/src/components/images/bgright.png);
     background-size:3000px;
     background-position: left, right;
 
