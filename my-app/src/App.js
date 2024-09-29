@@ -1,28 +1,35 @@
-// // src/App.js
-// import React from 'react';
-// import Home from './components/Home';
-//
-// function App() {
-//     return <Home />;
-// }
-//
-// export default App;
-
-
 // src/App.js
-import React, {useState, useEffect, useRef} from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Layout from './components/Layout';
 import Home from './components/Home';
+import Games from './components/Games';
+import About from './components/About';
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <Layout />, // Use Layout as the root element
+        children: [
+            {
+                index: true, // This route matches the root path '/'
+                element: <Home />,
+            },
+            {
+                path: 'games',
+                element: <Games />,
+            },
+            {
+                path: 'about',
+                element: <About />,
+            },
+            // Add more child routes here
+        ],
+    },
+]);
 
 function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                {/* Add more routes as needed */}
-            </Routes>
-        </BrowserRouter>
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;

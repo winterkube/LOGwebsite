@@ -8,6 +8,7 @@ import constructImage from './images/construct.png';
 import lockImage from './images/lock.png';
 import blankImage from './images/blank.png';
 import blackImage from './images/black.png';
+import {ScrollRestoration} from "react-router-dom";
 
 // // Import audio files
 // import hitAudio from './sfx/hitsfx.mp3';
@@ -37,16 +38,12 @@ function Home() {
              <h1>Welcome!</h1>
 
              {/* UNDER CONSTRUCTION */}
-             <div style={{textAlign: 'center'}}>
-             <div id="construct">
-             <img src={constructImage} alt="Under Construction" height={270}/>
-             </div>
-             <h6>
-             <b>
-             UNDER <br/> CONSTRUCTION
-             </b>
-                             </h6>
-                        </div>
+            <div id="construct" style={{ textAlign: 'center' }}>
+                    <img src={constructImage} alt="Under Construction" height={270}/>
+            </div>
+
+            <h6> <b> UNDER <br/> CONSTRUCTION </b> </h6>
+            <ScrollRestoration />
         </div>
     );
 }

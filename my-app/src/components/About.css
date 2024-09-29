@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+
+.about h6{
+
+    font-family: "Cabin Sketch";
+    font-size: 70px;
+
+    color:rgba(164, 115, 88, 0.943);
+
+    position: relative;
+    top: 50px;
+
+    text-align: center;
+    text-shadow: 0px 0px 5px rgb(176, 124, 98);
+
+}
+
+/* hexa cabin font */
+.about h7{
+
+    font-family: "Cabin Sketch";
+    font-size: 60px;
+
+    color:rgb(117, 87, 58);
+
+    position: relative;
+    left: 30px;
+    padding-bottom: 185px;
+
+    text-shadow: 0px 0px 5px rgb(176, 124, 98);
+
+}
+
+/* hexa lexend font */
+.about h8{
+
+    font-family: "Lexend";
+    font-size: 25px;
+
+    color:rgb(88, 68, 49);
+
+    position: relative;
+    left: 305px;
+    padding-bottom: 165px;
+
+
+
+}
