@@ -13,6 +13,13 @@ import blackImage from './images/black.png';
 // import hitAudio from './sfx/hitsfx.mp3';
 // import clockAudio from './sfx/clock.mp3';
 
+const Test = () => {
+
+    const [state, setState] = useState('test')
+    const [state2, setState2] = useRef('test')
+}
+
+
 function Home() {
     return (
         <div className="home">
