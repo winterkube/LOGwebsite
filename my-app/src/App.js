@@ -8,6 +8,8 @@ import About from './components/About';
 import Login from './components/Login';
 import ForgotPassword from "./components/ForgotPassword";
 
+import Snake from './components/games/Snake';
+
 const router = createBrowserRouter([
     {
         path: '/',
@@ -32,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path: 'forgot-password',
                 element: <ForgotPassword />,
+            },
+            {
+                path: 'games/snake',
+                element: <Snake />,
             },
             // Add more child routes here
         ],

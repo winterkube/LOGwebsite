@@ -5,3 +5,8 @@
     text-align: center;
     margin-top: 50px;
 }
+
+.snake {
+    font-family: "Lexend", serif;
+    font-size: 17px;
+}

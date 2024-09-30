@@ -18,6 +18,10 @@ function Games() {
 
             <h4> GAMES </h4>
 
+            <div className="snake">
+                <a href="/games/snake">SNAKE</a>
+            </div>
+
             <div id="construct" style={{textAlign: 'center'}}>
                 <img src={constructImage} alt="Under Construction" height={220}/>
             </div>
