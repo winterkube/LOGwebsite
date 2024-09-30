@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Games from './components/Games';
 import About from './components/About';
 import Login from './components/Login';
+import ForgotPassword from "./components/ForgotPassword";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: 'login',
                 element: <Login />,
+            },
+            {
+                path: 'forgot-password',
+                element: <ForgotPassword />,
             },
             // Add more child routes here
         ],

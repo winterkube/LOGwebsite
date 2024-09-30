@@ -12,7 +12,7 @@ function Login() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setShowLoginForm(false);
-        }, 1500); // 3000 milliseconds = 3 seconds
+        }, 1000); // 3000 milliseconds = 3 seconds
 
         // Cleanup the timer when component unmounts
         return () => clearTimeout(timer);
@@ -90,7 +90,7 @@ function Login() {
                         You can try making it work locally though. </h5>
                     <div className="links">
                         <a href="#" onClick={handleGoBackHome}>Go back home</a>
-                        <span className="separator">|</span>
+                        <span className="separator"></span>
                         <a href="#" onClick={handleTryLoginAgain}>Try logging in anyway</a>
                     </div>
                 </div>
