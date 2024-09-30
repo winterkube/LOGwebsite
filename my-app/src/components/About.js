@@ -24,35 +24,45 @@ function About() {
 
             <h3>  <br/>  <br/>  <br/>  </h3>
 
-            <div id = "hexaupload">
-                <img src={hexaUpload} alt="Logo" height={220}/>
-                <h7> UPLOAD <br/> </h7>
-                <h8> Anyone can contribute and upload their very own games for others to play in the ‎
-                    <Link to="/games" title="Games">
-                         games
-                    </Link>
-                    ‎ section. Make sure it is compatible with HTML!</h8>
+            <div className = "hexaContainer">
+
+                <img src={hexaUpload} alt="Logo" height={220} className = "hexImage"/>
+
+                <div className = "hexContent">
+                    <div className = "hexTitle"> UPLOAD <br/> </div>
+                    <div className = "hexDesc"> Anyone can contribute and upload their very own games for others to play in the ‎
+                        <Link to="/games" title="Games">
+                             games
+                        </Link>
+                        ‎ section. Make sure it is compatible with HTML!</div>
+                </div>
 
             </div>
 
-            <div id = "hexaopen">
-                <img src={hexaOpen} alt="Logo" height={220}/>
-                <h7> OPEN SOURCE <br/> </h7>
-                <h8> LOG is open source for everyone and can be viewed at our public github ‎
+            <div className = "hexaContainer">
 
-                    <Link to="https://github.com/winterkube/LOGwebsite" title="Github">
-                        repository.
-                    </Link>
+                <img src={hexaOpen} alt="Logo" height={220} className = "hexImage"/>
 
-                    ‎ Devs can choose to upload and keep their games as open source or closed. </h8>
+                <div className = "hexContent">
+                    <div className = "hexTitle"> OPEN SOURCE <br/></div>
+                    <div className = "hexDesc"> LOG is open source for everyone and can be viewed at our public github ‎
 
+                        <Link to="https://github.com/winterkube/LOGwebsite" title="Github">
+                            repository.
+                        </Link>
+
+                        ‎ Devs can choose to upload and keep their games as open source or closed. </div>
+                </div>
             </div>
 
-            <div id = "hexafree">
-                <img src={hexaFree} alt="Logo" height={220}/>
-                <h7> FREE <br/> </h7>
-                <h8> LOG is a non-profit project. We strive for our platform to be as accessible as possible to everyone! </h8>
+            <div className = "hexaContainer">
+                <img src={hexaFree} alt="Logo" height={220} className = "hexImage"/>
 
+                <div className = "hexContent">
+                    <div className = "hexTitle"> FREE <br/> </div>
+                    <div className = "hexDesc"> LOG is a non-profit project.
+                        We strive for our platform to be as accessible as possible to everyone! </div>
+                </div>
             </div>
 
             <h6> LOG STAFF </h6>
