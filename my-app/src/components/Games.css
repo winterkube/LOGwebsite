@@ -1,3 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
 
+.games {
+    text-align: center;
+    margin-top: 50px;
+}

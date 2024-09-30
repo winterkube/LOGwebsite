@@ -14,7 +14,7 @@ function About() {
         <div className="about">
 
             <div id="logo" style={{textAlign: 'center'}}>
-                <img src={logoImage} alt="Logo" height={300}/>
+                <img src={logoImage} alt="Logo" height={250}/>
             </div>
 
             <h4> About LOG </h4>
@@ -25,7 +25,7 @@ function About() {
             <h3>  <br/>  <br/>  <br/>  </h3>
 
             <div id = "hexaupload">
-                <img src={hexaUpload} alt="Logo" height={250}/>
+                <img src={hexaUpload} alt="Logo" height={220}/>
                 <h7> UPLOAD <br/> </h7>
                 <h8> Anyone can contribute and upload their very own games for others to play in the ‎
                     <Link to="/games" title="Games">
@@ -36,7 +36,7 @@ function About() {
             </div>
 
             <div id = "hexaopen">
-                <img src={hexaOpen} alt="Logo" height={250}/>
+                <img src={hexaOpen} alt="Logo" height={220}/>
                 <h7> OPEN SOURCE <br/> </h7>
                 <h8> LOG is open source for everyone and can be viewed at our public github ‎
 
@@ -49,7 +49,7 @@ function About() {
             </div>
 
             <div id = "hexafree">
-                <img src={hexaFree} alt="Logo" height={250}/>
+                <img src={hexaFree} alt="Logo" height={220}/>
                 <h7> FREE <br/> </h7>
                 <h8> LOG is a non-profit project. We strive for our platform to be as accessible as possible to everyone! </h8>
 

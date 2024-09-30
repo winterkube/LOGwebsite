@@ -5,6 +5,7 @@ import Layout from './components/Layout';
 import Home from './components/Home';
 import Games from './components/Games';
 import About from './components/About';
+import Login from './components/Login';
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path: 'about',
                 element: <About />,
+            },
+            {
+                path: 'login',
+                element: <Login />,
             },
             // Add more child routes here
         ],

@@ -10,13 +10,13 @@ function Games() {
         <div className="games">
 
             <div id="logo" style={{textAlign: 'center'}}>
-                <img src={logoImage} alt="Logo" height={300}/>
+                <img src={logoImage} alt="Logo" height={250}/>
             </div>
 
             <h4> GAMES </h4>
 
             <div id="construct" style={{textAlign: 'center'}}>
-                <img src={constructImage} alt="Under Construction" height={270}/>
+                <img src={constructImage} alt="Under Construction" height={220}/>
             </div>
 
             <h6><b> UNDER <br/> CONSTRUCTION </b></h6>
