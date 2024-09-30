@@ -1,6 +1,9 @@
-import React from 'react';
+
 import '../App.css';
 import './Games.css';
+
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // If you're using React Router
 
 import logoImage from "./images/log logo.png";
 import constructImage from './images/construct.png';
