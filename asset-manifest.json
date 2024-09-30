@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/LOGwebsite/static/css/main.6452efbb.css",
+    "main.js": "/LOGwebsite/static/js/main.f82a4d4a.js",
+    "static/js/453.ed3810f9.chunk.js": "/LOGwebsite/static/js/453.ed3810f9.chunk.js",
+    "static/media/plank.png": "/LOGwebsite/static/media/plank.7140b50c4b9f4be6464b.png",
+    "static/media/construct.png": "/LOGwebsite/static/media/construct.b39a6f3d3ce40d924c7c.png",
+    "static/media/hexaupload.png": "/LOGwebsite/static/media/hexaupload.0b16a63c84cdfd26892e.png",
+    "static/media/hitsfx.mp3": "/LOGwebsite/static/media/hitsfx.da1039a7cad5b656008f.mp3",
+    "static/media/hexafree.png": "/LOGwebsite/static/media/hexafree.a0d5af186f7cb3115d4b.png",
+    "static/media/hexaopen.png": "/LOGwebsite/static/media/hexaopen.6beeb2db6031d50dda63.png",
+    "static/media/log logo.png": "/LOGwebsite/static/media/log logo.a0bbb34d37d28e8593a3.png",
+    "static/media/bgleft.png": "/LOGwebsite/static/media/bgleft.3a20f5a3e288a7656fdf.png",
+    "static/media/bgright.png": "/LOGwebsite/static/media/bgright.4c8dc14b40e6f3732cb7.png",
+    "static/media/gamingicon.png": "/LOGwebsite/static/media/gamingicon.dea4bbef238c97d4d63d.png",
+    "static/media/lock.png": "/LOGwebsite/static/media/lock.f4826a2ee7732fe1267f.png",
+    "static/media/loginicon.png": "/LOGwebsite/static/media/loginicon.f59ef603e9743cc77f58.png",
+    "static/media/homeicon.png": "/LOGwebsite/static/media/homeicon.9aeba798dcdfcb89331b.png",
+    "index.html": "/LOGwebsite/index.html",
+    "main.6452efbb.css.map": "/LOGwebsite/static/css/main.6452efbb.css.map",
+    "main.f82a4d4a.js.map": "/LOGwebsite/static/js/main.f82a4d4a.js.map",
+    "453.ed3810f9.chunk.js.map": "/LOGwebsite/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6452efbb.css",
+    "static/js/main.f82a4d4a.js"
+  ]
+}
