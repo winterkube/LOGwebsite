@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/LOGwebsite/static/css/main.6452efbb.css",
-    "main.js": "/LOGwebsite/static/js/main.f82a4d4a.js",
+    "main.css": "/LOGwebsite/static/css/main.bb5b889e.css",
+    "main.js": "/LOGwebsite/static/js/main.e7957808.js",
     "static/js/453.ed3810f9.chunk.js": "/LOGwebsite/static/js/453.ed3810f9.chunk.js",
     "static/media/plank.png": "/LOGwebsite/static/media/plank.7140b50c4b9f4be6464b.png",
     "static/media/construct.png": "/LOGwebsite/static/media/construct.b39a6f3d3ce40d924c7c.png",
@@ -17,12 +17,12 @@
     "static/media/loginicon.png": "/LOGwebsite/static/media/loginicon.f59ef603e9743cc77f58.png",
     "static/media/homeicon.png": "/LOGwebsite/static/media/homeicon.9aeba798dcdfcb89331b.png",
     "index.html": "/LOGwebsite/index.html",
-    "main.6452efbb.css.map": "/LOGwebsite/static/css/main.6452efbb.css.map",
-    "main.f82a4d4a.js.map": "/LOGwebsite/static/js/main.f82a4d4a.js.map",
+    "main.bb5b889e.css.map": "/LOGwebsite/static/css/main.bb5b889e.css.map",
+    "main.e7957808.js.map": "/LOGwebsite/static/js/main.e7957808.js.map",
     "453.ed3810f9.chunk.js.map": "/LOGwebsite/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6452efbb.css",
-    "static/js/main.f82a4d4a.js"
+    "static/css/main.bb5b889e.css",
+    "static/js/main.e7957808.js"
   ]
 }
