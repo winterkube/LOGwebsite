@@ -16,6 +16,7 @@ function Snake() {
 
             <h4> SNAKE (but harder) </h4>
 
+
         </div>
 
     );

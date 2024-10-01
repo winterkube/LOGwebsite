@@ -19,7 +19,7 @@ function Games() {
             <h4> GAMES </h4>
 
             <div className="snake">
-                <a href="/games/snake">SNAKE</a>
+                <a href="/games/snake">SNAKE (but harder)</a>
             </div>
 
             <div id="construct" style={{textAlign: 'center'}}>
